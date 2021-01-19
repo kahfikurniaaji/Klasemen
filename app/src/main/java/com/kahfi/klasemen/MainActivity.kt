@@ -48,7 +48,6 @@ class MainActivity : AppCompatActivity() {
                     val sg = results.getJSONArray("stats").getJSONObject(9).getString("value")
                     val poin = results.getJSONArray("stats").getJSONObject(6).getString("value")
                     ClubList.add(ClubModel(rank, urlLogo, nama, bermain, menang, seri, kalah, gm, ga, sg, poin))
-//                    ClubList.add(ClubModel("name", BitmapFactory.decodeResource(resources, R.drawable.icon3)))
                 }
             } catch (e: JSONException) {
                 e.printStackTrace()
